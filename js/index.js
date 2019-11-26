@@ -11,7 +11,7 @@ $('#login_button').on('click', function(){
   json_to_send = JSON.stringify(json_to_send)
   console.log(json_to_send)
   $.ajax({
-    url: 'https://backend-a00815058.herokuapp.com/login',
+    url: 'http://localhost:3000/login',
     // url: 'https://tuapp.herokuapp.com/users/login',
     headers: {
         'Content-Type':'application/json'
