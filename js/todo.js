@@ -8,7 +8,7 @@ var todos = document.querySelectorAll("input[type=checkbox]");
 
 function loadTodos() {
   $.ajax({
-    url: 'https://backend-a00815058.herokuapp.com/todos',
+    url: 'http://localhost:3000/todos',
     // url: 'https://tuapp.herokuapp.com/todos',
     headers: {
         'Content-Type':'application/json',
@@ -59,7 +59,7 @@ input.addEventListener('keypress', function (event) {
     };
     json_to_send = JSON.stringify(json_to_send);
     $.ajax({
-      url: 'https://backend-a00815058.herokuapp.com/todos',
+      url: 'http://localhost:3000/todos',
       // url: 'https://tuapp.herokuapp.com/todos',
       headers: {
           'Content-Type':'application/json',
